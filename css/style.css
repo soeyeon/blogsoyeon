@@ -8,16 +8,19 @@
 body::-webkit-scrollbar { 
   display : none; 
 }
+
 html{
   width: 100%;
   height: 100%;
 }
+
 body{
   padding: 0;
   margin: 0;
   background-color: rgb(243, 229, 211); 
   -ms-overflow-style : none;
 }
+
 .container{
   width: 95%;
   margin : auto;
@@ -26,9 +29,11 @@ body{
   align-items: center;
   font-family: 'paybooc-Bold';
 }
+
 section{
   margin: 0 7%;
 }
+
 ul{
   margin: 0;
   padding: 0;
@@ -42,30 +47,40 @@ ul{
 
 .navbar-light .navbar-nav .nav-link active.active{
   color: #363537;
-  }
+}
 
 .navbar-brand{
   margin: 0;
 }
+
 /* index */
-article#main-col {
-  float: left;
-  width: 100%;
+
+#main{
+  padding-top: 20px;
 }
+
+article#main-col {
+  width:80%;
+  float: right;
+}
+
 article#main-col p{
   font-size: 30px;
   font-family: 'paybooc-Bold';
 }
+
 #myprofile #myp{
   width: 500px;
   height: 500px;
   padding: 10px;
 }
+
 #myprofile #insta{
   width: 30px;
   height: 30px;
   padding: 5px;
 }
+
 #myweb{
   font-family: 'paybooc-Bold';
 }
@@ -74,10 +89,37 @@ article#main-col p{
   float: left;
   margin: 10px;
 }
+
 #myweb iframe{
   height: 300px;
   margin: 10px;
 }
+aside#sidebar{
+  width: 15%;
+  float: left;
+  text-align: left;
+}
+
+aside#sidebar .btn {
+  cursor: pointer;
+}
+
+aside#sidebar .clicked {
+  color: #7f8c8d;
+}
+
+.form, .greetings {
+  display: none;
+}
+
+aside#sidebar input{
+  margin-bottom: 10px;
+}
+
+.showing {
+  display: block;
+}
+
 /* dog */
 .carousel-inner img {
   width: 100%;
@@ -94,6 +136,7 @@ article#main-col p{
 }
 
 /* top.js */
+
 a.jcm-top {
   position: fixed;
   right: 1%;
@@ -104,64 +147,79 @@ a.jcm-top {
   z-index: 999;
   display: none; 
 }
+
 /* hobby */
+
 #pcard img{
   height: 400px;
   width: 400px;
   padding: 2px;
 }
+
 #pcard p{
   font-size: 20px;
   padding: 20px;
 }
+
 #pcard h1{
   font-size: 50px;
 }
+
 #pcard div{
   display:inline-block;
   padding:0 10px;
 }
+
 #hiking h1{
   color: green;
 				background-color: #c6f3c6;
 				border-bottom: 5px solid #00d000;
 }
+
 #swimming h1{
   color: rgb(78, 195, 241);
 				background-color: #c7f0ee;
 				border-bottom: 5px solid rgb(78, 195, 241);
 }
+
 #climbing h1{
   color: rgb(181, 73, 231);
 				background-color: #e9c7f0;
 				border-bottom: 5px solid rgb(181, 73, 231);
 }
+
 #voice h1{
   color: rgb(236, 39, 65);
 				background-color: #f5afc4;
 				border-bottom: 5px solid rgb(236, 39, 65);
 }
+
 #hat h1{
   color: rgb(253, 119, 29);
 				background-color: rgb(255, 211, 182);
 				border-bottom: 5px solid rgb(253, 119, 29);
 }
+
 #speech h1{
   color: rgb(139, 103, 3);
 				background-color: #e6cba4;
 				border-bottom: 5px solid rgb(139, 103, 3);
 }
+
 #music h1{
   color: rgb(1, 95, 1);
 				background-color: #15aa42;
 				border-bottom: 5px solid rgb(1, 95, 1);
 }
+
 #what h1{
   color: rgb(0, 0, 0);
 				background-color: #2a3030;
 				border-bottom: 5px solid rgb(0, 0, 0);
 }
+
 /* footer */
+
 footer {
   padding: 10px;
   background: rgb(241, 217, 180);
@@ -172,12 +230,14 @@ footer {
   margin-top: 3%;
   bottom: 0; 
 }
+
 footer p{
   font-family: 'BBTreeGR';
   padding: 27px 0;
 }
 
 /* Team */
+
 #teamproject .container{
     height: 100%;
     padding: 1vw 0.4vw;
@@ -252,6 +312,7 @@ footer p{
 #teamproject .card-text, #teamproject .card-body a{
   font-size: 1.2vw;
 }
+
 ul {
   list-style:none;
   margin:0;
@@ -264,18 +325,6 @@ li {
 
 }
 
-/* js top */
-a.jcm-top {
-  position: fixed;
-  right: 1%;
-  bottom: 5%;
-  text-align: center;
-  width: 4%;
-  height: 5%;
-  z-index: 999;
-  display: none; 
-}
-
 /* Media Quaries */
 @media(max-width: 768px) {
   header #branding,
@@ -283,57 +332,75 @@ a.jcm-top {
   header nav li,
   footer,
   article#main-col,
-  #sidebar .quote,
   #myweb img,
   #myweb iframe,
   #pcard div
-
   {
     float: none;
     text-align: center;
     width: 100%;
   }
+
+/* header */
+
+  header{
+    padding: 10px;
+  }
+
   header li, .quote button {
     display: block;
     width: 100%;
   }
-  .quote input[type="email"], .quote input, .quote textarea {
+
+/* index */
+
+  aside#sidebar{
     width: 100%;
-    margin-bottom: 5px;
+    padding-bottom: 50px;
+    margin-left:30%;
+    text-align: left;
+  }
+
+  article#main-col p{
+    font-size: 15px;
+  }
+
+  #myprofile #myp{
+    height: 400px;
+    width: 400px;
+  }
+
+  #ins img{
+    height: 10px;
+    width: 10px;
+  }
+
+  #myprofile #font7{
+    font-size: 35px;
   }
   #myprofile img{
     width: 300px;
     height: 300px;
     padding: 10px;
   }
+
+/* hobby */
+
   #pcard img{
     width: 250px;
     height: 250px;
   }
+
   #bori h3{
     font-size: 25px;
   }
-  header{
-    padding: 10px;
-  }
-  article#main-col p{
-    font-size: 20px;
-  }
-  #ins img{
-    height: 10px;
-    width: 10px;
-  }
-  #myprofile #myp{
-    height: 400px;
-    width: 400px;
-  }
-  #myprofile #font7{
-    font-size: 35px;
-  }
+
+  /* 팀 */
+
   #teamproject{
     margin-top: 7%;
   }
-/* 팀 */
+
   #teamproject h2{
     font-size: 7vw!important;
   }
@@ -371,6 +438,7 @@ a.jcm-top {
   }
   #bori{
     padding-bottom: 100px;
+    width: 300px;
   }
   #bori h1{
     padding-bottom: 30px;
