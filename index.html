@@ -58,29 +58,48 @@
         </div>
       </div>
     </nav>
+    </div>
   </header>
 
-<div id="main"></div>
+  <section id="main">
   <div class="container">
-    <article id="main-col">   
+  <aside id="sidebar">
+    <ul>
+    <li><div class="js-clock">
+      <h1>00:00</h1>
+    </div></li>
+    <li><form class="js-form form">
+      <input type="text" placeholder="What is your name?" />
+  </form></li>
+  <li><h4 class="js-greetings greetings"></h4></li>
+  <li><form class="js-toDoForm">
+      <input type="text" placeholder="Write a to do" />
+  </form></li>
+  <li><ul class="js-toDoList"></ul></li>
+  <li><span class="js-weather"></span></li>
+  <script src="js/clock.js"></script>
+  <script src="js/greeting.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
+</ul>
+</aside>
+<article id="main-col"> 
     <p>❤소연이의 블로그에 놀러오신 여러분을 환영해요❤</p>
-</div>
+    <div id="myprofile">
+      <img src="img/soyeon.jpg" id="myp" alt="전소연"> <br>
+      <a href="https://www.instagram.com/jsy_8941/" target="_blank" id="ins"><img src="img/insta.jpg" id="insta" alt="인스타그램" ></a><br>
+      <font size="1" color="red">ENFP</font><br>
+      <font size="2" color="orange">전소연</font><br>
+      <font size="3" color="yellow">91914171</font><br>
+      <font size="4" color="green">중부대학교</font><br>
+      <font size="5" color="blue">정보보호학전공</font><br>
+      <font size="6" color="purple">사이버수사대</font><br>
+      <font size="6" color="pink">경상남도 합천군</font><br>
+      <font size="6" color= rgb(5, 103, 128);>2000년 10월 28일</font><br>
+      <font size="7" color="brown" id="font7">wjsthdus8941@gmail.com</font><br>
+    </div>
 
-<div id="myprofile">
-  <div class="container">
-  <img src="img/soyeon.jpg" id="myp" alt="전소연"> <br>
-  <div id="ins">
-  <a href="https://www.instagram.com/jsy_8941/" target="_blank"><img src="img/insta.jpg" id="insta" alt="인스타그램"></a></div>
-  <font size="1" color="red">ENFP</font><br>
-  <font size="2" color="orange">전소연</font><br>
-  <font size="3" color="yellow">91914171</font><br>
-  <font size="4" color="green">중부대학교</font><br>
-  <font size="5" color="blue">정보보호학전공</font><br>
-  <font size="6" color="purple">사이버수사대</font><br>
-  <font size="6" color="pink">경상남도 합천군</font><br>
-  <font size="6" color= rgb(5, 103, 128);>2000년 10월 28일</font><br>
-  <font size="7" color="brown" id="font7">wjsthdus8941@gmail.com</font><br>
-</div>
+  </article>
 </div>
 </section>
   <footer class="footer"> Copyright &copy; 2021 전소연 Corp.</footer>
