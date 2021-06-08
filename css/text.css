@@ -198,6 +198,48 @@ footer {
   height: 500px;
   float: right;
 }
+.fade-out-box {
+  display: inline-block;
+  background: yellow;
+  padding: 10px;
+  animation: fadeout 3s;
+  -moz-animation: fadeout 3s; /* Firefox */
+  -webkit-animation: fadeout 3s; /* Safari and Chrome */
+  -o-animation: fadeout 3s; /* Opera */
+  animation-fill-mode: forwards;
+}
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@-moz-keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@-o-keyframes fadeout { 
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
 /* mbti3 */
 article {
   flex-direction: column;

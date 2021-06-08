@@ -19,6 +19,7 @@ body{
   margin: 0;
   background-color: rgb(243, 229, 211); 
   -ms-overflow-style : none;
+  font-family: 'paybooc-Bold';
 }
 
 .container{
@@ -121,18 +122,22 @@ aside#sidebar input{
 }
 
 /* dog */
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
+#carousel-example-generic{
+  margin: 50px 0 60px 30%;
 }
 
 .carousel-inner p{
-  padding: 0 5px;
+  
   display:inline-block;
   color: white;
   opacity: 1;
   background: rgba(0, 0, 0, 0.5);
   font-family: 'BBTreeGR';
+}
+
+#bori h1{
+  padding-top: 30px;
+  text-align: center;
 }
 
 /* top.js */
@@ -438,9 +443,11 @@ li {
   }
   #bori{
     padding-bottom: 100px;
-    width: 300px;
   }
   #bori h1{
     padding-bottom: 30px;
+  }
+  #carousel-example-generic{
+    margin: 0;
   }
 }
