@@ -13,13 +13,37 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
   crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#apiCall').change(function() {
+                
+                var stnId = $(this).val();
+                
+                var request = $.ajax({
+                    url: "/apiCallProcess",
+                    method: "POST",
+                    data: { stnId : stnId },
+                    dataType: "json"
+                });
+                 
+                request.done(function( data ) {
+                    console.log(data);
+                });
+                 
+                request.fail(function( jqXHR, textStatus ) {
+                  alert( "Request failed: " + textStatus );
+                });
+                
+            });
+        });
+    </script>
   <title>소연세상</title>
   <link rel="stylesheet" href="css/text.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="js/mbti.js"></script>
 </head>
 
 <body>
+
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
@@ -42,15 +66,15 @@
               <a class="nav-link" href="dog.html">MY DOG</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="team.html">TEAM</a>
+              <a class="nav-link active" aria-current="page" href="team.html">TEAM</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle  active" aria-current="page" href="mbti1.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="mbti1.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 MBTI
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="mbti1.html">TYPE</a></li>
-                <li><a class="dropdown-item" href="mbti2.html">BUNDLE</a></li>
+                <li><a class="dropdown-item" href="mbti2.html">TYPE</a></li>
+                <li><a class="dropdown-item" href="mbti1.html">BUNDLE</a></li>
                 <li><a class="dropdown-item" href="mbti3.html">TEST</a></li>
               </ul>
             </li>
@@ -69,35 +93,7 @@
     </nav>
   </header>
 
-  <section id="bans">
-    <div id="ban">
-    <div id="container">
-      <img src="img/m1.png" id="ba0">
-      <img src="img/m2.jpg" id="ba1">
-      <img src="img/m3.jpg" id="ba2">
-      <img src="img/m4.jpg" id="ba3">
-      <img src="img/m5.jpg" id="ba4">
-      <img src="img/m6.jpeg" id="ba5">
-      <img src="img/m7.jpg" id="ba6">
-      <img src="img/m8.jpg" id="ba7">
-      <img src="img/m9.jpg" id="ba8">
-      <img src="img/m10.jpg" id="ba9">
-      <img src="img/m11.jpeg" id="ba10">
-      <img src="img/m12.jpeg" id="ba11">
-      <img src="img/m13.jpeg" id="ba12">
-      <img src="img/m14.jpeg" id="ba13">
-      <img src="img/m15.jpeg" id="ba14">
-      <img src="img/m16.jpeg" id="ba15">
-      <img src="img/m17.jpeg" id="ba16">
-      </div>
-    </div>
-    <div class="fade-out-box">
-      왼쪽 사진을 클릭해보세요🥰    
-    </div>
-    <img src="img/mbti16.jpg" alt="MBTI유형" id="mbtipick">
-  </section>
-
-
   <footer class="footer"> Copyright &copy; 2021 전소연 Corp.</footer>
+
 </body>
 </html>
